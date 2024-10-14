@@ -1,0 +1,17 @@
+
+backend/node_modules/*
+frontend/node_modules/*
+frontend/*.local
+
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+logs
+*.log
+animate.mov

@@ -1,0 +1,39 @@
+{
+  "name": "banksys",
+  "version": "1.0.0",
+  "author": "Mina",
+  "description": "",
+  "main": "./src/app.ts",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon src/app.ts",
+    "build": "docker build -t banksys .",
+    "run": "docker run -p 8080:8080 banksys",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/jest": "^29.5.13",
+    "@types/node": "^22.7.5",
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^9.1.1",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "express": "^4.21.1",
+    "nodemon": "^3.1.7"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "setupFiles": [
+      "./jest.setup.js"
+    ]
+  }
+}
